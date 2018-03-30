@@ -1,8 +1,8 @@
 # Patterns that CNN recognize
 
-Note that the results here are visualizations of the pattern tensors.
+Note that the results here are visualized pattern tensors.
 
-They are not exactly the pattern images.
+They are not exactly pattern images.
 
 ## Algorithm (using PyTorch)
 ```
