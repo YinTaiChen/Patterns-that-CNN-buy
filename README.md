@@ -43,8 +43,8 @@ They are not exactly pattern images.
         loss.backward(retain_variables=True)
         optimizer.step()
     
-    to_save= unloader(input_img.data.clone().cpu().view(3, 224, 224))
-    to_save.save('./alexnet/image_'+str(c)+'.jpg')
+    pattern_tensor = unloader(input_img.data.clone().cpu().view(3, 224, 224))
+    pattern_tensor.save('./alexnet/image_'+str(c)+'.jpg')
 ```
 
 ## AlexNet
