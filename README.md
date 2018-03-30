@@ -1,0 +1,1 @@
+# Patterns that CNN buy
