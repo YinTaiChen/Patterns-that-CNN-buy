@@ -7,12 +7,12 @@ They are not exactly pattern images.
 ## Algorithm (using PyTorch)
 ```
   import torch
+  import torch.autograd.Variable as Variable
   import torch.nn as nn
-  import torchvision
+  import torch.optim as optim
   import torchvision.models as models
   import torchvision.transforms as transforms
-  from torch.autograd import Variable
-  import torch.optim as optim
+  
   
   alexnet = models.alexnet(pretrained=True)
   alexnet = alexnet.cuda()
