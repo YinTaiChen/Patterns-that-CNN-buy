@@ -3,7 +3,7 @@
 Note that the results here are visualizations of the pattern tensors.
 They are not exactly the pattern images.
 
-## Algorithm
+## Algorithm (using PyTorch)
 ```
   import torch
   import torch.nn as nn
