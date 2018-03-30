@@ -23,7 +23,7 @@
 ![image](https://github.com/YinTaiChen/Patterns-that-CNN-buy/blob/master/alexnet_0_10/image_6.jpg)
 
 ### Class 7 cock
-![image](https://github.com/YinTaiChen/Patterns-that-CNN-buy/blob/master/alexnet_0_10image_7.jpg)
+![image](https://github.com/YinTaiChen/Patterns-that-CNN-buy/blob/master/alexnet_0_10/image_7.jpg)
 
 ### Class 8 hen
 ![image](https://github.com/YinTaiChen/Patterns-that-CNN-buy/blob/master/alexnet_0_10/image_8.jpg)
