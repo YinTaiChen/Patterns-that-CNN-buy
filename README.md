@@ -1,4 +1,4 @@
-# Patterns that CNN buy
+# Patterns that CNN recognize
 
 ## AlexNet
 ### Class 0 tench, Tinca tinca
