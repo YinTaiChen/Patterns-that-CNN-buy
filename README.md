@@ -37,6 +37,7 @@ They are not exactly pattern images.
 
         output = alexnet(input_img)
         loss = criterion(output, label)
+        
         if epoch == 999:
             print(loss)
 
