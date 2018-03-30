@@ -1,5 +1,7 @@
 # Patterns that CNN recognize
 
+Note that torchvision.ToTensor converts a PIL Image or numpy.ndarray (H x W x C) in the range [0, 255] to a torch.FloatTensor of shape (C x H x W) in the range [0.0, 1.0].
+
 ## AlexNet
 ### Class 0 tench, Tinca tinca
 ![image](https://github.com/YinTaiChen/Patterns-that-CNN-buy/blob/master/alexnet_0_10/image_0.jpg)
