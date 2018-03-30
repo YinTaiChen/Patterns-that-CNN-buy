@@ -3,6 +3,49 @@
 Note that the results here are visualizations of the pattern tensors.
 They are not exactly the pattern images.
 
+## Algorithm
+```
+  import torch
+  import torch.nn as nn
+  import torchvision
+  import torchvision.models as models
+  import torchvision.transforms as transforms
+  from torch.autograd import Variable
+  import torch.optim as optim
+  
+  alexnet = models.alexnet(pretrained=True)
+  alexnet = alexnet.cuda()
+  
+  for param in alexnet.parameters():
+    param.requires_grad = False
+    
+  unloader = transforms.ToPILImage()
+  
+  for c in range(1000):
+    label = Variable(torch.cuda.LongTensor([c]))
+
+    input_img = torch.zeros((1, 3, 224, 224)).type(torch.cuda.FloatTensor)
+    input_img = Variable(input_img, requires_grad = True)
+
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.SGD([input_img], lr=1.0)
+
+    for epoch in range(1000):
+
+        optimizer.zero_grad()
+
+        output = alexnet(input_img)
+        loss = criterion(output, label)
+        if epoch == 999:
+            print(loss)
+
+        loss.backward(retain_variables=True)
+        optimizer.step()
+    
+    to_save= unloader(input_img.data.clone().cpu().view(3, 224, 224))
+    to_save.save('./alexnet/image_'+str(c)+'.jpg')
+```
+
 ## AlexNet
 ### Class 0 tench, Tinca tinca
 ![image](https://github.com/YinTaiChen/Patterns-that-CNN-buy/blob/master/alexnet_0_10/image_0.jpg)
