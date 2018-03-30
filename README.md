@@ -1,6 +1,7 @@
 # Patterns that CNN recognize
 
-Note that the results here are visualizations of the pattern tensors instead of the pattern images.
+Note that the results here are visualizations of the pattern tensors.
+They are not exactly the pattern images.
 
 ## AlexNet
 ### Class 0 tench, Tinca tinca
